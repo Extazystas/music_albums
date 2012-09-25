@@ -11,21 +11,22 @@
 </p>
 <p>
   <h5>List of tracks:</h5>
-  <table>
+  <table class="table">
     <th>Track name</th>
     <th>Track duration</th>
+    <th>Controls</th>
     <% @music_album.tracks.each do |track| %>
     <tr>
       <td><%= link_to track.name, music_album_track_path(@music_album.id, track) %></td>
       <td><%= formatted track.duration %></td>
-      <td><%= link_to 'Destroy', music_album_track_path(@music_album.id, track), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <td><%= link_to 'Destroy', music_album_track_path(@music_album.id, track), method: :delete, data: { confirm: 'Are you sure?' },  :class => "btn btn-danger" %></td>
     <% end %>
   </tr>
   </table>
 </p>
 
-<%= link_to 'Add track', new_music_album_track_path(@music_album) %>
+<%= link_to 'Add track', new_music_album_track_path(@music_album), :class => "btn btn-success" %>
 
 
-<%= link_to 'Edit', edit_music_album_path(@music_album) %> |
-<%= link_to 'Back', music_albums_path %>
+<%= link_to 'Edit', edit_music_album_path(@music_album), :class => "btn btn-danger" %> 
+<%= link_to 'Back', music_albums_path, :class => "btn btn-info" %>
