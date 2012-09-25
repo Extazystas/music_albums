@@ -1,9 +1,10 @@
 MusicAlbums::Application.routes.draw do
-  resources :music_albums
+  resources :music_albums do
+    resources :tracks
+  end
   root :to => "music_albums#index"
- 
-  resources :tracks, only: :new
-  match 'tracks' => 'tracks#create', via: :post
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

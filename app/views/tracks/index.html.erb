@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+<h1>Listing Tracks</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Duration</th>
+  </tr>
+
+<% @tracks.each do |track| %>
+  <tr>
+    <td><%= link_to track.name, track_path(track) %></td>
+   
+    <td><%= formatted track.duration %></td>
+     <td><%= link_to 'Destroy', track, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Add track', new_track_path %>

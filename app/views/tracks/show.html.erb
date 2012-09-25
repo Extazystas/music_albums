@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @track.name %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= formatted @track.duration %>
+</p>
+
+
+<%= link_to 'Edit track', edit_music_album_track_path %>
+<%= link_to 'Back to album', @track.music_album %>
