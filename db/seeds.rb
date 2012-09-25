@@ -7,14 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-MusicAlbum.create :id =>6, :name => "...And Justice for All", :year => 1988
-Track.create :id => 30, :name => "...And Justice for All", :duration => 582, :music_album_id => 6
-Track.create :id => 31, :name => "One", :duration => 390, :music_album_id => 6
-Track.create :id => 32, :name => "Some song", :duration => 312, :music_album_id => 6
-Track.create :id => 33, :name => "Hit the Lights", :duration => 257, :music_album_id => 6
-Track.create :id => 34, :name => "Whiplash", :duration => 250, :music_album_id => 6
-MusicAlbum.create :id =>7, :name => "Kill Em All", :year => 1983
-Track.create :id => 42, :name => "Eye of the Beholder", :duration => 390, :music_album_id => 7
-Track.create :id => 43, :name => "Jump in the Fire", :duration => 312, :music_album_id => 7
-Track.create :id => 44, :name => "Hit the Lights", :duration => 257, :music_album_id => 7
-Track.create :id => 45, :name => "Whiplash", :duration => 250, :music_album_id => 7
+album1 = MusicAlbum.create :name => "...And Justice for All", :year => 1988
+Track.create :name => "...And Justice for All", :duration => 582, :music_album_id => album1.id
+Track.create :name => "One", :duration => 390, :music_album_id => album1.id
+Track.create :name => "Some song", :duration => 312, :music_album_id => album1.id
+Track.create :name => "Hit the Lights", :duration => 257, :music_album_id => album1.id
+Track.create :name => "Whiplash", :duration => 250, :music_album_id => album1.id
+album2 = MusicAlbum.create :name => "Kill Em All", :year => 1983
+Track.create :name => "Eye of the Beholder", :duration => 390, :music_album_id => album2.id
+Track.create :name => "Jump in the Fire", :duration => 312, :music_album_id => album2.id
+Track.create :name => "Hit the Lights", :duration => 257, :music_album_id => album2.id
+Track.create :name => "Whiplash", :duration => 250, :music_album_id => album2.id
