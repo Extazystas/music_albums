@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-MusicAlbum.create :id =>6, :name => "…And Justice for All", :year => 1988
+MusicAlbum.create :id =>6, :name => "...And Justice for All", :year => 1988
 Track.create :id => 30, :name => "...And Justice for All", :duration => 582, :music_album_id => 6
 Track.create :id => 31, :name => "One", :duration => 390, :music_album_id => 6
 Track.create :id => 32, :name => "Some song", :duration => 312, :music_album_id => 6
