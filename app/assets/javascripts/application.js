@@ -15,7 +15,7 @@
 //= require twitter/bootstrap
 //= require_tree .
 
-
+$(function() {
  // Hide alerts without text
   if ($('p.alert').text().length > 0) {
     $('p.alert').effect("shake", { distance:5, direction: "down up", times:2 }, 200);
@@ -32,3 +32,4 @@
   else {
     $('p.notice.alert').hide();
   }
+});
