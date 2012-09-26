@@ -13,7 +13,7 @@ Track.create :name => "One", :duration => 390, :music_album_id => album1.id
 Track.create :name => "Some song", :duration => 312, :music_album_id => album1.id
 Track.create :name => "The Shortest Straw", :duration => 257, :music_album_id => album1.id
 Track.create :name => "Whiplash", :duration => 250, :music_album_id => album1.id
-Track.create :name => "«Blackened»", :duration => 360, :music_album_id => album1.id
+Track.create :name => "Blackened", :duration => 360, :music_album_id => album1.id
 Track.create :name => "Eye of the Beholder", :duration => 400, :music_album_id => album1.id
 Track.create :name => "To Live is to Die", :duration => 582, :music_album_id => album1.id
 Track.create :name => "Dyers Eve", :duration => 313, :music_album_id => album1.id
@@ -27,4 +27,3 @@ Track.create :name => "Phantom Lord", :duration => 322, :music_album_id => album
 Track.create :name => "No Remorse", :duration => 386, :music_album_id => album2.id
 Track.create :name => "Seek and Destroy", :duration => 284, :music_album_id => album2.id
 Track.create :name => "Metal Militia", :duration => 321, :music_album_id => album2.id
-

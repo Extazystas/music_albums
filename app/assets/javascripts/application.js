@@ -14,3 +14,21 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
+
+ // Hide alerts without text
+  if ($('p.alert').text().length > 0) {
+    $('p.alert').effect("shake", { distance:5, direction: "down up", times:2 }, 200);
+    $('p.alert-success').css('visibility','hidden');
+  }
+  else {
+    $('p.alert').hide();
+  }
+  if ($('p.notice.alert').text().length > 0) {
+    $('p.alert').effect("shake", { distance:5, direction: "down up", times:2 }, 200)
+                .fadeTo(4000, 0.0);
+
+  }
+  else {
+    $('p.notice.alert').hide();
+  }
